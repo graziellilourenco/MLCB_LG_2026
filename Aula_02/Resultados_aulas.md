@@ -77,3 +77,18 @@ print(f"Acurácia do Modelo: {acuracia * 100:.2f}%")
 2 - O modelo analisa as palavras da mensagem e identifica a intenção com a qual ela mais se parece
 3 - a arvore pode ficar complexa demais e memorizar os exemplos de treinamento, tendo pior desempenho com novas mensagens.
 
+
+
+--- RESULTADOS DO LAB 4 ---
+
+Acurácia do Modelo: 100.00%
+Mensagem: Gostaria de comprar um voo para Salvador
+Intenção prevista: comprar_passagem
+
+Mensagem: Quero desistir da minha viagem
+Intenção prevista: comprar_passagem
+
+Mensagem: Preciso conversar com um atendente
+Intenção prevista: falar_atendente
+
+
