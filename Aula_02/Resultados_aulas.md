@@ -73,3 +73,7 @@ predicoes = modelo_arvore.predict(X_test_vec)
 acuracia = accuracy_score(y_test,predicoes)
 print(f"Acurácia do Modelo: {acuracia * 100:.2f}%")
 
+1 - 33.33%. sim, com uma metrica tão pequena, acertar ou errar ja altera o resultado e não garante que o modelo funcionará bem com novos exemplos.
+2 - O modelo analisa as palavras da mensagem e identifica a intenção com a qual ela mais se parece
+3 - a arvore pode ficar complexa demais e memorizar os exemplos de treinamento, tendo pior desempenho com novas mensagens.
+
