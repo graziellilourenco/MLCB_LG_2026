@@ -1,3 +1,6 @@
+# ============================================================
+# LAB 03 - AULA 03 (MLCB): Scikit-Learn Pipeline (Modo TODO)
+# ============================================================
 import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -9,12 +12,14 @@ dados_rh = {
     'mensagem': [
         'Como solicitar minhas ferias?', 'Quero agendar meu periodo de ferias',
         'Onde baixo meu holerite do mes?', 'Preciso do comprovante de rendimentos',
-        'Como cadastrar meu atestado medico?', 'Onde envio o atestado de consulta?'
+        'Como cadastrar meu atestado medico?', 'Onde envio o atestado de consulta?',
+        "Estou doente", 'Fui no medico'
     ],
     'intencao': [
         'solicitar_ferias', 'solicitar_ferias',
         'obter_holerite', 'obter_holerite',
-        'enviar_atestado', 'enviar_atestado'
+        'enviar_atestado', 'enviar_atestado',
+        'enviar_atestado','enviar_atestado',
     ]
 }
 
@@ -43,3 +48,10 @@ pipeline.fit(X_train, y_train)
 # TODO 5: Faca a predicao nos dados de teste brutos e exiba a acuracia
 predicoes = pipeline.predict(X_test)
 print(f"Acuracia via Pipeline: {accuracy_score(y_test, predicoes) * 100:.2f}%")
+
+#========== PRODUÇÃO DO RELATÓRIO:==============
+# 1 - Cole o código corrigido e a acurácia obtida.
+# 2 - Qual é a grande vantagem de utilizar o objeto Pipeline no Scikit-Learn?
+# 3 - Por que o Pipeline evita que erros de pré-processamento ocorram entre treino e teste?
+# Todos os resultados devem ser inseridos no arquivo resultados_aula03.md
+#========== FIM ==============
